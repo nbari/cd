@@ -1,6 +1,6 @@
 .PHONY: all get test clean build cover compile goxc bintray
 
-VERSION=0.0.1
+VERSION=0.1.0
 GO ?= go
 BIN_NAME=cd
 GITHASH=$(shell git rev-parse HEAD)
