@@ -15,7 +15,7 @@ build: get
 	tar -jcf app.bz2 *
 
 clean:
-	@rm -rf ${BIN_NAME} ${BIN_NAME}.debug *.out build debian
+	@rm -rf ${BIN_NAME} *.out
 
 test: get
 	${GO} test -v
