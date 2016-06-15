@@ -10,7 +10,7 @@ import (
 var version, githash string
 
 func catchAll(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello, %s+%s", version, githash)
+	fmt.Fprintf(w, "Hello, %s + %s", version, githash)
 }
 
 func main() {
