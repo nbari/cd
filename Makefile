@@ -12,6 +12,7 @@ get:
 
 build: get
 	${GO} build -ldflags "-X main.version=${VERSION} -X main.githash=${GITHASH}" -o ${BIN_NAME}
+	tar -jcf app.bz2 *
 
 clean:
 	@rm -rf ${BIN_NAME} ${BIN_NAME}.debug *.out build debian
