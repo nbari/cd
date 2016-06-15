@@ -10,7 +10,13 @@ import (
 var version, githash string
 
 func catchAll(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello, %s + %s", version, githash)
+	html := `
+	<html>
+	<head>
+	<meta http-equiv="refresh" content="3" />
+	</head>
+	<body>Hola %s`
+	fmt.Fprintf(w, html, version)
 }
 
 func main() {
