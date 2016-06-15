@@ -15,7 +15,7 @@ func catchAll(w http.ResponseWriter, r *http.Request) {
 	<head>
 	<meta http-equiv="refresh" content="3" />
 	</head>
-	<body>Hallo %s`
+	<body>Hola %s`
 	fmt.Fprintf(w, html, version)
 }
 
